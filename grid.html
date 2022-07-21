@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karmveer Singh</title>
+    <meta name="description" content="Inoveter, Entrepreneur And Developer">
+    <meta name="keywords" content="Karmveer, Karmveer sarwara, Karmveer singh, Karmveer singh sarwara">
+    <meta name="author" content="Karmveer Singh Sarwara">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    *{      margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    body{ width: 100%; display: grid; grid-template-columns: 90% 10% ;  height: 626px;/* background-color: #e6e6e6;*/ }
+     @media screen and (max-width: 1100px){
+        body{grid-template-columns: 95% 10%;} 
+     }
+     @media screen and (max-width: 970px){
+        body{grid-template-columns: 100%;}
+     }
+    nav{
+            display: grid;
+            /* width: 5%; */
+             z-index: 2;
+            position: fixed;
+            right: 0;
+            /* height: 352px; */
+            /* transform: translate(-50%,0%); */
+            /* border: 1px solid black; */
+            /* text-align: center; */
+            /* grid-template-columns: 20% ; */
+            /*align-content: space-evenly; */ 
+            justify-content: end;
+            margin: 10% 0;
+            row-gap: 35px;
+        }
+        .navd{
+            width: 150px;height: 50px; border-radius: 110px 110px;
+             color: white;
+            position: relative;left: -50px;
+            transition: all 0.5s;
+            transform-origin: center;
+        }
+        .navd span{width: 50px;height: 50px;position: absolute;
+            background-color: #918f8f;border-radius: 110px 110px;
+            right: 0;top: 50%;z-index: -1;
+            transform: translate(0%,-50%);}
+            #homec {background-color: #918f8f00;border-radius: 110px 110px;}
+            /* #aboutc {background-color: #918f8f00;border-radius: 110px 110px;} */
+            /* #portc {background-color: #918f8f00;border-radius: 110px 110px;} */
+            /* #contc {background-color: #918f8f00;border-radius: 110px 110px;} */
+            /* #blogc {background-color: #918f8f00;border-radius: 110px 110px;} */
+        .navd:hover{width: 150px; left: -50px; background-color: #72b626;}
+        .navd i{ position: absolute;right: 10px;top: 50%;
+            transform: translate(-50%,-50%);
+        }
+        
+        @media screen and (max-width: 970px){
+        nav{bottom: 0; left: 0;  height: auto;width: 100%;
+             grid-template-columns: 20% 20% 20% 20% 20%;
+            background-color: rgb(30, 190, 116);margin: 0;padding: 5px 0; 
+            justify-items: center;
+            /* width: 100%; */
+        }
+        .navd{ width: 50px;left: 0px; line-height: 80px; margin: 5px 0;}
+        .navd:hover{ width: 50px;left: 0px; background-color: #73b62600;}
+        }
+    main{width: 100%;height: 625px; background-color: #fff; font-family: Poppins, sans-serif;}
+            /* display: grid; grid-template-columns: 100%; */
+        #home{background: linear-gradient(75deg, #72b626 23%, white 23.1%);}
+        #homein{height: 100vh;
+             position: relative;/*min-height: 625px; bottom: 0%;*/}
+            
+            #photo img{width: 100%;}
+            #photo{width: 300px; height: 550px;position:absolute;top: 50%;left: 24%; overflow: hidden;
+             background-color: #c4c4c4;border-radius: 8px; transform: translate(-50%,-50%);
+             box-shadow: -1px -1px 15px 2px white, 5px 5px 15px -5px #001224 ,inset -15px -15px 15px -20px #000000,inset 2px 2px 15px 5px rgba(255, 255, 255, 0.829);
+            }
+            #home_con{ position: relative; top: 25%; left: 45%;        /*background-color: aquamarine; */
+                 height: 300px;width: 500px;}
+            #home h2{color: gray; font-size: 45px;}
+            #homeh1{ 
+                 position: absolute;/*top: 35%;left: 60%; */
+              color: #26b626;font-size: large;
+             } 
+            #homeh1 p{width: 90%;margin:  5% 0;}
+            #btn{
+                position: absolute;transform: translate(-50%,-50%);top: 95%;left: 20%;
+                width: 200px;height: 50px;
+                border-radius: 110px;border: 1px solid #26b626;
+                line-height: 30px;padding: 10px;
+                /* transition: all 2s; */
+            }
+            #btn:hover{background-color: #26b626; color: #fff;}
+             #btn button{
+                position: absolute;transform: translate(0%,-50%);top: 50%;right: 0%;
+                 width: 50px;height: 50px;
+                border-radius: 110px;border: none;
+                color: white; background-color: #26b626;
+             } 
+        @media screen and (max-width: 970px){
+            #home{background: #73b62600;}
+            #photo{width: 260px; height: 260px;position:absolute;top: 20%;left: 50%; border-radius: 50%;}
+            #home_con{top: 45%;left: 0;width: 100%;}
+                #home h2{color: gray; font-size: 30px; margin: 10px 0; text-align: center;}
+                #homeh1{font-size: small; text-align: center; width: 100%;}
+                #homeh1 p{width: 70%;margin: 0 15%;color: #001224;}
+                #btn{top: 80%;left: 50%;}
+        }
+        #about{height: 100vh;background: linear-gradient(75deg, #fafafa , white ); position: relative; /*transition: 0.7s;*/overflow: hidden; overflow-y: scroll;}
+            #about::-webkit-scrollbar {display: none; }
+            .manu_nav{ height: 150px; width: 100%;}
+            .manu_nav h1{ font-weight: 800;position: absolute;transform: translate(-50%,0%);top: 35px;left: 50%; opacity: 0.7; font-size: 53px;width: 80%;text-align: center;}
+            .manu_nav span{color: #26b626;}
+            .manu_nav h2{ font-weight: 600;position: absolute;transform: translate(-50%,0%);top: 15px;left: 50%; opacity: 0.1;font-size: 110px;}
+            #about-con{
+                display: grid;
+                /* grid-template-columns:50% 50%; */
+                grid-template-areas:'my1 my2' 'my3 my3' 'my4 my4';
+                gap: 10px; padding: 10px 0% 10px 10%;
+            }
+            #item1 {grid-area: my1; }
+                #item1_ul{display: grid;display: grid; grid-template-columns:50% 50%; list-style-type: none;}
+            #item2 {grid-area: my2;
+                 display: grid; grid-template-columns:49% 49%; gap: 2%;}
+                 .itam2_box{border: 1px solid rgba(0, 0, 0, 0.4); border-radius: 8px;padding: 30px; }
+                 .itam2_box h1{font-size: 45px;color: #26b626;}
+                 .itam2_box h5{font-size: 25px; font-weight: 200; padding: 20px 10px 5px 50px;position: relative;}
+                 .itam2_box h5:before {
+                                content: "";
+                                position: absolute;
+                                left: 0px;
+                                top: 35px;
+                                width: 45px;
+                                height: 1px;
+                                background: #777;
+                            }
+                 li{padding: 10px 0;}
+            #item3 {grid-area: my3;text-align: center;
+                 display: grid; grid-template-columns:25% 25% 25% 25%; }
+                 .i3head1{grid-column: 1 / 5;text-align: center; margin: 50px;font-size: 1.6em;}
+                 .bars {margin: 2em auto;max-width: 960px; overflow: hidden; }
+                 /* .bar { float: left;  width: 20%;  text-align: center; } */
+                 .bar h3 { font-size: 1.4em; margin: 0; text-transform: uppercase; }
+                 .bar-circle span{font-size: larger; font-weight: 800; text-align: center;}
+                .bar-circle { display: block; margin: 0.7em auto; background-color: white;
+                    border: 1.2rem solid palegreen; border-radius: 50%;
+                    width: 6.8em; height: 6.8em; padding: 1em;
+                    /* box-shadow: inset 0 0 7px grey; */
+                    border-left-color: palegreen;
+                    border-top-color:chartreuse ;
+                    border-right-color: darkgreen;
+                    border-bottom-color: white ;
+                }
+            #item4 {grid-area: my4; display: grid;grid-template-columns: 50% 50%; gap: 20px; position: relative;}
+            .i3head2{grid-column: 1 / 3;text-align: center; margin: 50px;font-size: 1.6em;}
+             .subitems{display: grid;grid-template-columns: 20% 80%; }
+                .subitem1{padding: 20%;}
+                     .item4-car{
+                      width: 50px;height: 50px; border-radius: 110px 110px;
+                      background-color: #26b645; color: white;position: relative;
+                     }.item4-car i{ position: absolute;right: 10px;top: 50%; transform: translate(-50%,-50%); }
+                     .line{width: 1px;height: 80px; margin: 0 22px; border: 1px solid gray;opacity: 0.5;}
+                .subitem2{padding: 15px 1px;}
+                     .subitem2 h6{ width: 104px; border-radius: 100px 100px; padding: 5px 10px;margin: 20px 2px; background-color: #c4c4c4;}
+                     .subitem2 h3{margin: 12px 2px;}
+                     .subitem2 h3 span{opacity: 0.6;}
+                     .subitem2 p{margin: 10px 2px;opacity: 0.7;font-weight: 500;}
+         @media screen and (max-width: 970px){
+            #about{height: 90vh;}
+            #about-con{
+                grid-template-areas:'my1 my1''my2 my2' 'my3 my3' 'my4 my4';
+                padding: 10px 5% 10px 5%;
+            }
+            
+               
+         }@media screen and (max-width: 800px){
+            body{ width: 100%;}
+            /* #about-con{
+                grid-template-areas:'my1 my1''my2 my2' 'my3 my3' 'my4 my4';
+                padding: 10px 5% 10px 5%; 
+            } */
+            /* #item2 {grid-template-columns:50% 50% ;} */
+                .itam2_box{padding: 30px; }
+             #item3 {grid-template-columns:50% 50% ;}
+                 .i3head1{grid-column: 1 / 3;}
+             #item4 {grid-template-columns:100% ;}
+                 .i3head2{grid-column: 1 / 2;}
+
+             
+             .manu_nav h1{ font-weight: 800;top: 35px; font-size: 35px;}
+             .manu_nav h2{ font-weight: 600;font-size: 80px;} 
+         }
+        
+        @media screen and (max-width: 545px){
+            /* #item1_ul {grid-template-columns:100%;width: 100px;} */
+            #item1_ul span{display: list-item; }
+            /* #item2 {grid-template-columns:100%;} */
+             .itam2_box{padding: 25px 20px; }
+             .itam2_box h1{font-size: 35px;color: #26b626;}
+                .itam2_box h5{font-size: 15px;  padding: 10px;}
+                .itam2_box h5:before { content: ""; width: 0px; }
+
+            .manu_nav h1{ font-weight: 800;top: 28px; font-size: 28px;}
+             .manu_nav h2{ font-weight: 600;font-size: 60px;} 
+        }
+        #port{height: 625px;background: linear-gradient(75deg,#fafafa 23%, #fafafa  23%);  position: relative;/*bottom: 100%;*/overflow: hidden; overflow-y: scroll;}
+            #port::-webkit-scrollbar {display: none; }
+            #port_con{padding: 10px 2% 10px 8%;}
+            #port_img{width: 100%;}
+            #port_img img{max-width: 33%;height: auto;padding: 15px;border-radius: 30px;}
+
+            @media screen and (max-width: 1100px){
+                #port_img img{max-width: 30%;height: auto;padding: 15px;border-radius: 30px;}
+            }@media screen and (max-width: 970px){
+                #port{height: 90vh;}
+                #port_img img{max-width: 49%;height: auto;padding: 15px;border-radius: 30px;}
+            /* }@media screen and (max-width: 800px){
+                #port_img img{max-width: 45%;height: auto;padding: 15px;border-radius: 30px;} */
+            }@media screen and (max-width: 545px){
+                #port_img img{max-width: 90%;height: auto;padding: 15px;border-radius: 30px;}
+            }
+        #cont{height: 625px;background: linear-gradient(75deg, #fafafa 23%, #fafafa  23.1%);  position: relative;/*bottom: 100%;*/overflow: hidden; overflow-y: scroll;}
+            #cont::-webkit-scrollbar {display: none; }
+            #cont_con{display: grid;grid-template-columns:35% 65%; padding: 0 0 0 5%;color: #666666;font-family: Poppins, sans-serif;; }
+                #cont_con1{height: 500px;padding: 15px;}
+                    #cont_con1 h3{margin: 10%;}
+                    #cont_con1 p:first-child{padding: 0 5%;}
+                    .con_col{margin: 25px 0;}
+                        .con_col i{font-size: xx-large;}
+                        .con_col span{margin: 0 15px;}
+                        .con_col p{margin: 0 15px;}
+                    #icones{float: left;}
+                #cont_con2{height: 400px;padding: 50px; position: relative;}
+                        input[type=text]{
+                            width: 100%;height: 50px;
+                            margin-top: 5%;
+                            padding: 10px;
+                            /* font-size: inherit; */
+                            margin-bottom: 3%;
+                            border-radius: 50px;
+                            border-style: solid;
+                            border-color: #dadada;
+                            box-sizing: border-box;
+                        }
+                        input[type=text]:focus {
+                        border: 3px solid #555;
+                        /* background-color: lightblue; */
+                        }
+                        textarea{
+                            width: 100%;height: 20vw;
+                            margin-top: 5%;padding: 20PX;
+                            font-size: large;
+                            margin-bottom: 3%;
+                            border-radius: 50px;
+                            border-style: solid;
+                            border-color: #dadada;
+                        box-sizing: border-box;
+                        }
+                        textarea::-webkit-scrollbar {display: none; }
+                        input[id=name]  {height: 50px; width: 45%; margin: 2%; margin-bottom: 5%;}
+                        /* label[id=name] {margin: 1%; padding: 10px; opacity: 0.8; float: left; width: 48%;}
+                        label[id=name2] {margin: 1%; padding: 10px; opacity: 0.8; float: right; width: 48%;}
+                        label[for=con] {padding: 10px; opacity: 0.8; font-size: large;} */
+                        #contentbtn{
+                            position: relative;transform: translate(-50%,-50%);top: 95%;left: 20%;
+                            width: 220px;height: 50px;
+                            border-radius: 110px;border: 2px solid #26b626;
+                            line-height: 30px;padding: 10px;margin-top: 30px;
+                            /* transition: all 2s; */
+                        }
+                        #contentbtn:hover{background-color: #26b626; color: #fff;}  
+                        /* #contentbtn div{  width: 150px;float: left;margin: 0;overflow: auto;} */
+                        #contentbtn button{
+                            position: absolute;transform: translate(0%,-50%);top: 50%;right: 0%;
+                            width: 50px;height: 50px;margin: 0;
+                            border-radius: 110px;border: none;
+                            color: white; background-color: #26b626;
+                        } 
+                        /* #contentbtn input[type=submit]{
+                            color: #ff014f;
+                            font-size: 20px;
+                            border: none;
+                            width: 45%; height: 50px;
+                            border-radius: 10px;
+                            padding: 10px;
+                            margin: 15px; margin-right: 50px;margin-top: 20px;
+                            background:  repeating-linear-gradient(135deg, #8d8f9161, #fdfdfd 100%);
+                            box-shadow: 8px 5px 25px -5px #00000087, -2px -2px 8px 1px white;
+                        }
+                        #contentbtn input[type=submit]:hover{
+                            margin: 10px; width: 50%; height: 55px; 
+                            color: white;
+                            background:  repeating-linear-gradient(135deg, #ff00bc, #ff3434 100%);
+                            box-shadow:  9px 6px 15px 0px #00000087, -5px -5px 15px 2px white;
+                        } */
+            @media screen and (max-width: 970px){
+                #cont{height: 90vh;}
+                #cont_con{
+                    display: grid;
+                    grid-template-columns: 100%;
+                    padding: 10px 5% 10px 5%;
+                }
+                #cont_con2{height: 400px;padding: 5px; }
+                input[id=name]  {height: 50px; width: 100%; margin: 0%; margin-bottom: 5%;}
+            }
+        #blog{height: 625px;background: linear-gradient(75deg, #fafafa 23%, #fafafa  23.1%);  position: relative;/*  bottom: 0%;*/overflow: hidden; overflow-y: scroll;}
+        #blog::-webkit-scrollbar {display: none; }
+        #blog_con{font-style:normal;}
+            #blog_con ul{display: grid;grid-template-columns: 33.33% 33.33% 33.33%; width: 100%;color: #666666;font-family: Poppins, sans-serif;;}
+            #blog_con li{list-style: none;padding: 20px;margin: 10px 0px 10px 30px;}
+            .blog_img{width: 100%;height: 50vh; overflow: hidden;
+            /* background-image: url(img/karm.jpg);background-size: cover; */}
+            .blog_img img{width: 100%;}
+            .blog_dis{padding-left: 10px;}
+            .blog_dis h2{font-weight:600;font-Size:20px;Line-Height:26px;Color:#666666;}
+            .blog_dis p{font-weight:500;font-Size:15px;Line-Height:24px;Color:#666666;}
+         @media screen and (max-width: 970px){
+            #blog{height: 90vh;}
+            #blog_con ul{
+                grid-template-columns:  50% 50%;
+                padding: 10px 5% 10px 5%;
+            }
+            .blog_img{ height: 43vw;;}
+        }@media screen and (max-width: 545px){
+            /* #blog{height: 90vh;} */
+            #blog_con ul{
+                grid-template-columns:  100%;
+                /* padding: 10px 5% 10px 5%; */
+            }
+            .blog_img{height: 80vw;}
+        }
+     </style> 
+</head> 
+<body> 
+ <!--    https://tunis.ibthemespro.com/home-light --> <!-- &#x1F3E0;&#127968;<h3>Home ⌂</h3> -->
+ 
+    <nav>
+    <!-- <div class="navc"></div> -->
+        <div id="homec"><div class="navd"><span id="shomec"></span><i class="fa fa-home"></i></div></div>
+        <div id="aboutc"> <div class="navd"><span id="saboutc"></span><i class="fa fa-user"></i></div></div>
+        <div id="portc"><div class="navd"><span id="sportc"></span><i class="fa fa-briefcase"></i></div></div>
+        <div id="contc"><div class="navd"><span id="scontc"></span><i class="fa fa-envelope"></i></div></div>
+        <div id="blogc"><div class="navd"><span id="sblogc"></span><i class="fa fa-comments"></i></div></div>
+    </nav>
+    <main>
+        <div id="home">
+            <div id="homein">
+                <!-- <img src="img/laptop.png" alt=""> -->
+                <div id="photo"><img src="img/karm.jpg" alt=""></div>
+                <div id="home_con">
+                    <div id="homeh1"><h1>I'M KARMVEER SINGH</h1>
+                        <h2>WEB DESIGNER</h2>
+                        <p>I'm a Karmveer Singh based web designer & developer, front‑end & back‑end developer focused on crafting clean & user‑friendly experiences, I am passionate about building excellent software that improves the lives of those around me.</p>
+                    </div>
+                    <div id="btn"> <h3>About More Me</h3><button><span>&#8680;</span> </button></div>
+                </div>
+            </div>
+            <!-- <div style="height: 400px;">123</div> -->
+        </div>
+        <div id="about">
+            <div class="manu_nav"><h1>ABOUT <span>ME</span> </h1><h2>RESUME</h2></div>
+            <div id="about-con">
+                <div id="item1">
+                    <h3>PERSONAL INFOS</h3>
+                    <ul id="item1_ul">
+                        <li><span>First Name:</span> <span>KARMVEER SINGH</span></li>
+                        <li><span></span> <span></span></li>
+                        <li><span>Age:</span> <span>22 Years</span></li>
+                        <li><span>Nationality:</span> <span>INDIA</span></li>
+                        <li><span>Freelance:</span> <span>Available</span></li>
+                        <li><span>Address:</span> <span>BATHINDA</span></li>
+                        <li><span>Phone:</span> <span>9588286155</span></li>
+                        <li><span>Email:</span> <span>Ks@gmail.com</span></li>
+                        <li><span>Skype:</span> <span>Karmveersarwara</span></li>
+                        <li><span>Langages:</span> <span>English, Punjabi and Hindi </span></li>
+                    </ul><button>Downlode CV</button>
+                </div>
+                <div id="item2">
+                    <div class="itam2_box"><h1>11</h1><h5>Years of Exprinces</h5> </div>
+                    <div class="itam2_box"><h1>22</h1><h5>Completed  Projects</h5></div>
+                    <div class="itam2_box"><h1>33</h1><h5>Happy Customers</h5></div>
+                    <div class="itam2_box"><h1>44</h1><h5>Awarda Win</h5></div>
+                </div>
+                <div id="item3">
+                    <!-- <div class="i3head1"><h2>MY SKILLS</h2></div> -->
+                    <div class="bars">
+                        <div class="bar" data-percent="80">
+                        <h3>HTML</h3>
+                            <span class="bar-circle" width="70" height="70"> <span>90%</span></span>
+                        </div>
+                    </div>
+                    <div class="bars">
+                        <div class="bar" data-percent="80">
+                        <h3>JAVASCRIPT</h3>
+                            <span class="bar-circle" width="70" height="70"><span>90%</span></span>
+                        </div>
+                        <!-- <div>2</div><h3>JAVASCRIPT</h3> -->
+                    </div>
+                    <div class="bars">
+                        <div class="bar" data-percent="80">
+                            <h3>CSS</h3>
+                                <span class="bar-circle" width="70" height="70"><span>90%</span></span>
+                            </div>
+                        <!-- <div>3</div><h3>CSS</h3> -->
+                    </div>
+                    <div class="bars">
+                        <div class="bar" data-percent="80">
+                            <h3>PHP</h3>
+                                <span class="bar-circle" width="70" height="70"><span>90%</span></span>
+                            </div>
+                        <!-- <div>4</div><h3>PHP</h3> -->
+                    </div>
+                    <div class="bars">
+                        <div class="bar" data-percent="80">
+                            <h3>WORDPRESS</h3>
+                                <span class="bar-circle" width="70" height="70"><span>90%</span></span>
+                            </div>
+                        <!-- <div></div><h3>WORDPRESS</h3> -->
+                    </div>
+                    <div class="bars">
+                        <div class="bar" data-percent="80">
+                            <h3>JQUERY</h3>
+                                <span class="bar-circle" width="70" height="70"><span>90%</span></span>
+                            </div>
+                        <!-- <div></div><h3>JQUERY</h3> -->
+                    </div>
+                    <div class="bars">
+                        <div class="bar" data-percent="80">
+                            <h3>ANGULAR</h3>
+                                <span class="bar-circle" width="70" height="70"><span>90%</span></span>
+                            </div>
+                        <!-- <div></div><h3>ANGULAR</h3> -->
+                    </div>
+                    <div class="bars">
+                        <div class="bar" data-percent="80">
+                            <h3>REACT</h3>
+                                <span class="bar-circle" width="70" height="70"><span>90%</span></span>
+                            </div>
+                        <!-- <div>10</div><h3>REACT</h3> -->
+                    </div>
+                </div>
+                <div id="item4">
+                    <!-- <div class="i3head2"><h2>EXPERIENCE & EDUCATION</h2></div> -->
+                    <div class="subdiv1">
+                        <div class="subitems">
+                            <div class="subitem1">
+                                <div class="item4-car"><i class="fa fa-briefcase"></i></div>
+                                <div class="line"></div>
+                            </div>
+                            <div class="subitem2">
+                                <h6>2018 - PRESENT</h6>
+                                <h3>WEB DEVELOPERENVATO <span> - </span><span> ENVATO</span> </h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="subitems">
+                            <div class="subitem1">
+                                <div class="item4-car"><i class="fa fa-briefcase"></i></div>
+                                <div class="line"></div>
+                            </div>
+                            <div class="subitem2">
+                                <h6>2018 - PRESENT</h6>
+                                <h3>WEB DEVELOPERENVATO <span> - </span><span> ENVATO</span> </h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="subitems">
+                            <div class="subitem1">
+                                <div class="item4-car"><i class="fa fa-briefcase"></i></div>
+                                <div class="line"></div>
+                            </div>
+                            <div class="subitem2">
+                                <h6>2018 - PRESENT</h6>
+                                <h3>WEB DEVELOPERENVATO <span> - </span><span> ENVATO</span> </h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="subdiv2">
+                        <div class="subitems">
+                            <div class="subitem1">
+                                <div class="item4-car"><i class="fa fa-briefcase"></i></div>
+                                <div class="line"></div>
+                            </div>
+                            <div class="subitem2">
+                                <h6>2018 - PRESENT</h6>
+                                <h3>WEB DEVELOPERENVATO <span> - </span><span> ENVATO</span> </h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="subitems">
+                            <div class="subitem1">
+                                <div class="item4-car"><i class="fa fa-briefcase"></i></div>
+                                <div class="line"></div>
+                            </div>
+                            <div class="subitem2">
+                                <h6>2018 - PRESENT</h6>
+                                <h3>WEB DEVELOPERENVATO <span> - </span><span> ENVATO</span> </h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="subitems">
+                            <div class="subitem1">
+                                <div class="item4-car"><i class="fa fa-briefcase"></i></div>
+                                <div class="line"></div>
+                            </div>
+                            <div class="subitem2">
+                                <h6>2018 - PRESENT</h6>
+                                <h3>WEB DEVELOPERENVATO <span> - </span><span> ENVATO</span> </h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div>3</div><div>4</div><div>5</div><div>6</div> -->
+                   
+                </div>
+                <!-- <div class="i3head"><h2>EXPERIENCE & EDUCATION</h2></div> -->
+            </div>
+        </div>
+        <div id="port">
+            <!-- <h1>Portfolio</h1> -->
+            <div class="manu_nav"><h1>MY <span>PORTFOLIO</span> </h1><h2>WORKS</h2></div>
+            <div id="port_con">
+                <div id="port_img">
+                    <img src="https://tunis.ibthemespro.com/img/projects/project-1.jpg" alt="photo">
+                    <img src="https://tunis.ibthemespro.com/img/projects/project-2.jpg" alt="photo">
+                    <img src="https://tunis.ibthemespro.com/img/projects/project-3.jpg" alt="photo">
+                    <img src="https://tunis.ibthemespro.com/img/projects/project-4.jpg" alt="photo">
+                    <img src="https://tunis.ibthemespro.com/img/projects/project-5.jpg" alt="photo">
+                    <img src="https://tunis.ibthemespro.com/img/projects/project-6.jpg" alt="photo">
+                    <img src="https://tunis.ibthemespro.com/img/projects/project-7.jpg" alt="photo">
+                    <img src="https://tunis.ibthemespro.com/img/projects/project-8.jpg" alt="photo">
+                    <img src="https://tunis.ibthemespro.com/img/projects/project-9.jpg" alt="photo">
+                </div>
+            </div>
+        </div>
+        <div id="cont">
+            <!-- <h1>Contact</h1> -->
+            <div class="manu_nav"><h1>GET IN <span>TOUCH</span> </h1><h2>CONTACT</h2></div>
+            <div id="cont_con">
+                <div id="cont_con1">
+                    <h3>DON'T BE SHY !</h3>
+                    <p>Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
+                    <div class="con_col">
+                        <i class="fa fa-home"></i>
+                        <span>ADDRESS POINT</span>
+                        <p>777 BATHINDA ,INDIA 151001.</p>
+                    </div>
+                    <div class="con_col">
+                        <i class="fa fa-envelope"></i>
+                        <span>MAIL ME</span>
+                        <p>Karmveersarwara@gmail.com.</p>
+                    </div>
+                    <div class="con_col">
+                        <i class="fa fa-mobile"></i>
+                        <span>CALL ME</span>
+                        <p>+919588286155.</p>
+                    </div>
+                    <div id="icones">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-telegram"></i>
+                        <i class="fa fa-youtube"></i>
+                        <i class="fa fa-website"></i>
+                    </div>
+                </div>
+                <div id="cont_con2">
+                    <form>
+                        <!-- <label for="name" id="name"> Your Name</label> -->
+                        <!-- <label for="mobile" id="name2">Phone Number</label><br> -->
+                        <input type="text" id="name" name="name" placeholder="YOUR NAME ">
+                        <input type="text" id="name" name="mobile" placeholder="YOUR MOBILE "><br>
+                        <!-- <label for="con">Email</label><br> -->
+                        <input type="text" id="gmail" name="email" placeholder="YOUR GMAIL "> <br>
+                        <!-- <label for="con">Subject</label><br> -->
+                        <input type="text" name="sub" placeholder="SUBJECT"><br>
+                        <!-- <label for="con">Your Massage</label><br> -->
+                        <textarea type=text name=Massage placeholder="YOUR MESSAGE"></textarea><br>
+                        <div id="contentbtn"><div> <h3>SAND MASSAGE</h3></div><button  type="submit"><span><i class="fa fa-send"></i></span> </button></div>
+                        <!-- <div id="contentbtn"> <input type="submit" name="Sand Massage" ></div> -->
+                    </form>
+                </div>
+            </div>
+        </div>  
+        <div id="blog">
+            <!-- <h1>Blog</h1> -->
+            <div class="manu_nav"><h1>MY <span>BLOG</span> </h1><h2>POSTS</h2></div>
+            <div id="blog_con">
+               <!-- <div> -->
+                   <ul>
+                       <li>
+                            <div class="blog_img" >
+                                <img src="img/karm.jpg" alt="photo">
+                            </div>
+                            <div class="blog_dis" >
+                                <h2>How to Own Your Audience by Creating an Email List </h2>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...</p>
+                            </div>
+                       </li>
+                       <li>
+                           <div class="blog_img">
+                               <img src="img/karm.jpg" alt="photo">
+                           </div>
+                           <div class="blog_dis" >
+                               <h2>How to Own Your Audience by Creating an Email List </h2>
+                               <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...</p>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="blog_img">
+                               <img src="img/flwr.gif" alt="photo" height="100%">
+                           </div>
+                           <div class="blog_dis" >
+                               <h2>How to Own Your Audience by Creating an Email List </h2>
+                               <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...</p>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="blog_img">
+                               <img src="img/karm.jpg" alt="photo">
+                           </div>
+                           <div class="blog_dis" >
+                               <h2>How to Own Your Audience by Creating an Email List </h2>
+                               <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...</p>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="blog_img">
+                               <img src="img/karm.jpg" alt="photo">
+                           </div>
+                           <div class="blog_dis" >
+                               <h2>How to Own Your Audience by Creating an Email List </h2>
+                               <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...</p>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="blog_img">
+                               <img src="img/karm.jpg" alt="photo">
+                           </div>
+                           <div class="blog_dis" >
+                               <h2>How to Own Your Audience by Creating an Email List </h2>
+                               <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...</p>
+                           </div>
+                       </li>
+                       <!-- <li>2</li> -->
+                   </ul>
+               <!-- </div> -->
+            </div>
+        </div>
+
+    </main>
+    <script>
+        const home = document.getElementById("home");
+        const homec = document.getElementById("homec");
+        // homec.style.backgroundColor="#32b626";
+        // homec.onclick = homea;
+        // function homea() {
+        $(document).ready(function(){
+        
+            $("#homec").click (function (e) {
+                // $("#home").animate({bottom:'0%', },500, 'swing');
+                $("#home").slideDown("slow");
+                home.style.display="block";
+                about.style.display="none";
+                port.style.display="none";
+                cont.style.display="none";
+                blog.style.display="none";
+                $("#shomec").css("background-color","#32b626"); $("#saboutc").css("background-color","#918f8f");
+                $("#sportc").css("background-color","#918f8f");
+                $("#scontc").css("background-color","#918f8f");$("#sblogc").css("background-color","#918f8f");
+                // $("h2").css("left","100%");
+                // $("h2").animate({left:'50%', },5000, 'swing');
+                // $("h1").css("left","0%");
+                // $("h1").animate({left:'50%', },5000, 'swing');
+                // homec.style.backgroundColor="#32b626";aboutc.style.backgroundColor="#918f8f";
+                // portc.style.backgroundColor="#918f8f";
+                // contc.style.backgroundColor="#918f8f";blogc.style.backgroundColor="#918f8f";
+                });
+        });
+        const about = document.getElementById("about");
+        about.style.display="none";
+        // const aboutc = document.getElementById("aboutc");
+        // aboutc.onclick = abouta;
+        // function abouta() {
+        $(document).ready(function(){
+        
+            $("#aboutc").click (function (e) {
+                // $("#about").animate({bottom:'0%', },500, 'swing');
+                $("#about").slideDown("slow");
+                about.style.display="block";
+                home.style.display="none";
+                port.style.display="none";
+                cont.style.display="none";
+                blog.style.display="none";
+                $("h2").css("display","none");
+                $("h2").css("left","100%");
+                $("h2").animate({left:'50%', },1000, 'swing');
+                $("h2").css("display","block");
+                $("h1").css("left","0%");
+                $("h1").animate({left:'50%', },1000, 'swing');
+                $("#shomec").css("background-color","#918f8f");$("#saboutc").css("background-color","#32b626");
+                $("#sportc").css("background-color","#918f8f");
+                $("#scontc").css("background-color","#918f8f");$("#sblogc").css("background-color","#918f8f");
+                // homec.style.backgroundColor="#918f8f";aboutc.style.backgroundColor="#32b626";
+                // portc.style.backgroundColor="#918f8f";
+                // contc.style.backgroundColor="#918f8f";blogc.style.backgroundColor="#918f8f";
+            });
+        })
+
+        const port = document.getElementById("port");
+        port.style.display="none";
+        // const portc = document.getElementById("portc");
+        // portc.onclick = porta;
+        // function porta() {
+            
+        $(document).ready(function(){
+            $("#portc").click (function (e) {
+                // $("#port").animate({bottom:'0%', },500, 'swing');
+                $("#port").slideDown("slow");
+                port.style.display="block";
+                home.style.display="none";
+                about.style.display="none";
+                cont.style.display="none";
+                blog.style.display="none";
+                $("h2").css("left","100%");
+                $("h2").animate({left:'50%', },1000, 'swing');
+                $("h1").css("left","0%");
+                $("h1").animate({left:'50%', },1000, 'swing');
+                $("#shomec").css("background-color","#918f8f");$("#saboutc").css("background-color","#918f8f");
+                $("#sportc").css("background-color","#32b626");
+                $("#scontc").css("background-color","#918f8f");$("#sblogc").css("background-color","#918f8f");
+                // homec.style.backgroundColor="#918f8f";aboutc.style.backgroundColor="#918f8f";
+                // portc.style.backgroundColor="#32b626";
+                // contc.style.backgroundColor="#918f8f";blogc.style.backgroundColor="#918f8f";
+            });
+        })
+
+        const cont = document.getElementById("cont");
+        cont.style.display="none";
+        // const contc = document.getElementById("contc");
+        // contc.onclick = conta;
+        $(document).ready(function(){
+            $("#contc").click (function (e) {
+                // $("#cont").animate({bottom:'0%', },500, 'swing');
+                $("#cont").slideDown("slow");
+                cont.style.display="block";
+                home.style.display="none";
+                about.style.display="none";
+                port.style.display="none";
+                blog.style.display="none";
+                $("h2").css("left","100%");
+                $("h2").animate({left:'50%', },1000, 'swing');
+                $("h1").css("left","0%");
+                 $("h1").animate({left:'50%', },1000, 'swing');
+                $("#shomec").css("background-color","#918f8f");$("#saboutc").css("background-color","#918f8f");
+                $("#sportc").css("background-color","#918f8f");
+                $("#scontc").css("background-color","#32b626");$("#sblogc").css("background-color","#918f8f");
+                // homec.style.backgroundColor="#918f8f";aboutc.style.backgroundColor="#918f8f";
+                // portc.style.backgroundColor="#918f8f";
+                // contc.style.backgroundColor="#32b626";blogc.style.backgroundColor="#918f8f";
+            });
+        })
+
+        const blog = document.getElementById("blog"); 
+        blog.style.display="none";
+        // const blogc = document.getElementById("blogc"); 
+        // blogc.onclick = bloga;
+        $(document).ready(function(){
+            // const home= $("#home");
+            // const about=$("#about");
+            // const port= $("#port");
+            // const cont= $("#cont");
+            // const blog= $("#blog");
+            $("#blogc").click (function (e) {
+            // $("#blog").animate({bottom:'0%', },500, 'swing');
+            $("#blog").slideDown("slow");
+                // $("#home").css("bottom","100%");
+                // $("#about").css("bottom","100%");
+                // $("#port").css("bottom","100%");
+                // $("#cont").css("bottom","100%");
+            blog.style.display="block"; 
+            home.style.display="none";
+            about.style.display="none";
+            port.style.display="none";
+            cont.style.display="none";
+                $("h2").css("left","100%");
+                $("h2").animate({left:'50%', },1000, 'swing');
+                $("h1").css("left","0%");
+                $("h1").animate({left:'50%', },1000, 'swing');
+                $("#shomec").css("background-color","#918f8f");$("#saboutc").css("background-color","#918f8f");
+                $("#sportc").css("background-color","#918f8f");
+                $("#scontc").css("background-color","#918f8f");$("#sblogc").css("background-color","#32b626");
+            // homec.style.backgroundColor="#918f8f";aboutc.style.backgroundColor="#918f8f";
+            // portc.style.backgroundColor="#918f8f";
+            // contc.style.backgroundColor="#918f8f";blogc.style.backgroundColor="#32b626";
+
+            });
+        })
+        
+
+
+    
+    // (function() {
+       
+    //    var Progress = function( element ) {
+           
+    //        this.context = element.getContext( "2d" );
+    //        this.refElement = element.parentNode;
+    //        this.loaded = 0;
+    //        this.start = 4.72;
+    //        this.width = this.context.canvas.width;
+    //        this.height = this.context.canvas.height;
+    //        this.total = parseInt( this.refElement.dataset.percent, 10 );
+    //        this.timer = null;
+           
+    //        this.diff = 0;
+           
+    //        this.init();	
+    //    };
+       
+    //    Progress.prototype = {
+    //        init: function() {
+    //            var self = this;
+    //            self.timer = setInterval(function() {
+    //                self.run();	
+    //            }, 25);
+    //        },
+    //        run: function() {
+    //            var self = this;
+               
+    //            self.diff = ( ( self.loaded / 100 ) * Math.PI * 2 * 10 ).toFixed( 2 );	
+    //            self.context.clearRect( 0, 0, self.width, self.height );
+    //            self.context.lineWidth = 10;
+    //            self.context.fillStyle = "#000";
+    //            self.context.strokeStyle = "#d30000";
+    //            self.context.textAlign = "center";
+               
+    //            self.context.fillText( self.loaded + "%", self.width * .5, self.height * .5 + 2, self.width );
+    //            self.context.beginPath();
+    //            self.context.arc( 35, 35, 30, self.start, self.diff / 10 + self.start, false );
+    //            self.context.stroke();
+               
+    //            if( self.loaded >= self.total ) {
+    //                clearInterval( self.timer );
+    //            }
+               
+    //            self.loaded++;
+    //        }
+    //    };
+       
+    //    var CircularSkillBar = function( elements ) {
+    //        this.bars = document.querySelectorAll( elements );
+    //        if( this.bars.length > 0 ) {
+    //            this.init();
+    //        }	
+    //    };
+       
+    //    CircularSkillBar.prototype = {
+    //        init: function() {
+    //            this.tick = 25;
+    //            this.progress();
+               
+    //        },
+    //        progress: function() {
+    //            var self = this;
+    //            var index = 0;
+    //            var firstCanvas = self.bars[0].querySelector( "canvas" );
+    //            var firstProg = new Progress( firstCanvas );
+               
+               
+               
+    //            var timer = setInterval(function() {
+    //                index++;
+                       
+    //                var canvas = self.bars[index].querySelector( "canvas" );
+    //                var prog = new Progress( canvas );
+                   
+    //                if( index == self.bars.length ) {
+    //                        clearInterval( timer );
+    //                } 
+                   
+    //            }, self.tick * 100);
+                   
+    //        }
+    //    };
+       
+    //    document.addEventListener( "DOMContentLoaded", function() {
+    //        var circularBars = new CircularSkillBar( "#bars .bar" );
+    //    });
+       
+    //  })();
+    </script>
+
+
+    
+</body>
+</html>
